@@ -1,12 +1,13 @@
 #/bin/bash
 echo "Installing Xcode Commandline Tools"
 xcode-select --install
-echo "Installing MacPorts"
+echo "Installing Homebrew"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 echo "Installing dpkg"
 brew install dpkg
 echo "Installing Theos"
 echo "export THEOS=\"/opt/theos\"" >>~/.bash_profile
+source ~/.bash_profile
 sudo git clone git://github.com/DHowett/theos.git $THEOS
 echo "Installing ldid"
 git clone git://git.saurik.com/ldid.git
