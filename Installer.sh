@@ -5,6 +5,8 @@ echo "Installing Homebrew"
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 echo "Installing dpkg"
 brew install dpkg
+echo "Installing ldid"
+brew install ldid
 echo "Installing Theos"
 echo "export THEOS=\"/opt/theos\"" >>~/.bash_profile
 source ~/.bash_profile
@@ -28,5 +30,6 @@ echo "Installing Hopper"
 ./Hopper.py
 unzip -XK ./Hoppper-Latest.zip
 mv './Hopper Disassembler v3.app' '/Applications/Hopper Disassembler v3.app'
+./debugserver.py
 
 
