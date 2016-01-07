@@ -1,2 +1,0 @@
-/Applications/Xcode7.app/Contents/Developer
-/Contents/Developer/Platforms/iPhoneOS.platform/DeviceSupport
